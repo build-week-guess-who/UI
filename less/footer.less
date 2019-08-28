@@ -2,12 +2,32 @@
 @import "mixins.less";
 
 footer {
-    margin-top: 20px;
+    margin-top: 30px;
 
     h5 {
         text-align: center;
         font-family: cursive;
         font-size: 100%;
         margin-bottom: 15px;
+    }
+
+    .the-team {
+        .flex-d(row);
+        // justify-content: flex-start;
+
+        section {
+            .flex-d(column);
+            justify-content: flex-start;
+            align-items: center;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    >p {
+        text-align: center;
+        margin-top: 60px;
     }
 }

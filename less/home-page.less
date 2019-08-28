@@ -1,6 +1,11 @@
 
 @import "mixins.less";
 
+.container {
+    margin-top: 15px;
+    // max-width: 800px;
+}
+
 header {
     .flex-d(column);
     margin-bottom: 20px;
@@ -8,22 +13,28 @@ header {
     h1 {
         text-align: center;
         font-family: cursive;
-        font-size: 200%;
+        font-size: 250%;
+        margin-bottom: 20px;
     }
 
     button {
         width: 10%;
         // text-align: center;
-        margin: 15px 45% 0;
+        margin: 15px 45%;
         height: 30px;
         border-radius: 5px;
         font-family: cursive;
         font-size: 110%;
     }
+
+    img {
+        width: 100%;
+    }
 }
 
 main {
     .flex-d(column);
+    // background-color: mediumblue;
 
     h2 {
         text-align: center;
@@ -33,14 +44,16 @@ main {
     
     .first-content, .second-content, .third-content {
         .flex-d(row);
-        margin-bottom: 20px;
+        // justify-content: flex-start;
+        margin: 20px 0;
 
         section, figure {
-            width: 48%;
+            width: 49%;
         }
 
         section {
             .flex-d(column);
+            justify-content: flex-start;
 
             h4 {
                 font-family: cursive;
