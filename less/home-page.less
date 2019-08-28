@@ -22,3 +22,37 @@ header {
     }
 }
 
+main {
+    .flex-d(column);
+
+    h2 {
+        text-align: center;
+        font-family: cursive;
+        font-size: 150%
+    }
+    
+    .first-content, .second-content, .third-content {
+        .flex-d(row);
+        margin-bottom: 20px;
+
+        section, figure {
+            width: 48%;
+        }
+
+        section {
+            .flex-d(column);
+
+            h4 {
+                font-family: cursive;
+                font-size: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 100%;
+    }
+}
+
