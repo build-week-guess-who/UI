@@ -5,6 +5,15 @@
 nav {
     .flex-d(row);
     margin-bottom: 20px;
+
+    @media @phone {
+        .flex-d(column);
+
+        figure {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
 }
 
 nav section {
@@ -14,6 +23,11 @@ nav section {
 
     @media @tablet {
         width: 30%;
+    }
+
+    @media @phone {
+        width: 70%;
+        margin: 0 15%;
     }
 }
 
