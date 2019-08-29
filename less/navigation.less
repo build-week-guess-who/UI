@@ -1,0 +1,42 @@
+
+@import "variables.less";
+@import "mixins.less";
+
+nav {
+    .flex-d(row);
+    align-items: center;
+    // margin-bottom: 20px;
+    background-color: #457FCD;
+
+    section {
+        width: 20%;
+        .flex-d(row);
+        margin-right: 2%;
+
+        a {
+            // margin-right: 5%;
+            text-decoration: none;
+            color: black;
+        }    
+        @media @tablet {
+            width: 40%;
+        }
+    
+        @media @phone {
+            width: 70%;
+            margin: 0 15%;
+            padding-bottom: 15px;
+        }
+    }
+
+    @media @phone {
+        .flex-d(column);
+
+        figure {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+ 
