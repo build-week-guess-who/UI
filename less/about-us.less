@@ -1,0 +1,105 @@
+@import "variables.less";
+@import "mixins.less";
+@import "navigation.less";
+
+.container {
+
+    margin: 0 auto;
+
+    header {
+        .flex-d(column);
+        margin-bottom: 20px;
+        background-color: #457FCD;
+        // padding-top: 0;
+    
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            font-size: 250%;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        p {
+            padding: 0 2%;
+            // color: #EFEA8E;
+            font-family: cursive;
+            font-size: 130%;
+        }
+    
+        // button {
+        //     width: 15%;
+        //     // text-align: center;
+        //     margin: 15px 45%;
+        //     height: 30px;
+        //     border-radius: 5px;
+        //     font-family: cursive;
+        //     font-size: 110%;
+    
+            
+        // }
+    
+        // img {
+        //     width: 100%;
+        // }
+    
+        // @media @tablet {
+        //     button {
+        //         width: 20%;
+        //         margin: 15px 40%;
+        //     }
+            
+        // }
+    
+        // @media @phone {
+        //     button {
+        //         width: 30%;
+        //         margin: 15px 35%;
+        //     }
+        // }
+    }
+
+    main {
+        .flex-d(column);
+
+        .figure-content {
+            .flex-d(row);
+
+            figure {
+                width: 49%;
+
+                img {
+                    width: 100%;
+                    height: 600px;
+                }
+            }
+
+            @media @tablet {
+                figure img {
+                    height: 300px;
+                }
+            }
+
+            @media @phone {
+                .flex-d(column);
+                // margin: 0 auto;
+
+                figure {
+                    margin: 0 auto;
+                    width: 90%;
+                    padding: 0;
+
+                    img {
+                        padding: 0;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    >p {
+        text-align: center;
+        margin-top: 70px;
+    }
+}
